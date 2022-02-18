@@ -9,6 +9,9 @@ Creare file in `/usr/share/multiple-monitors.sh`:
 
 xrandr --setprovideroutputsource 1 0
 xrandr --output VGA1 --auto --output VGA-1-1 --auto --left-of VGA1
+
+#nomi ottenuti con xrandr --listproviders
+xrandr --setprovideroffloadsink "CAICOS @ pci:0000:01:00.0" Intel
 ```
 
 Rendere il file eseguibile:
