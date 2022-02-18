@@ -15,4 +15,11 @@ Abilita il Wake on LAN:
 sudo ethtool -s eno1 wol g
 ```
 
-Riavvia per verficare che funzioni
+Spegni per verificare che funzioni.
+
+Abilita il Wake on LAN permanentemente creando un file sotto `/etc/network/interfaces.d/eno1` con:
+```
+auto eno1
+iface eno1 inet dhcp
+	ethernet-wol g
+```
